@@ -1,0 +1,83 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+.dish {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 160px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+
+}
+
+.dish:hover {
+  scale: 1.05;
+  transition: 0.1s;
+
+}
+
+.dish-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dish-price {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.dish-category {
+  font-style: italic;
+  color: #777;
+  background-color: green;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.dish p {
+  font-style: italic;
+  color: black;
+  margin: 3px;
+}
+
+.dish h2 {
+  margin: 3px;
+}
+
+#root {
+ width: 100%;
+ justify-content: center;
+ height: 100%;
+}
