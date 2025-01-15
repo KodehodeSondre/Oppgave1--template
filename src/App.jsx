@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./Menu.jsx";
+import Slideshow from "./Slideshow.jsx";
 import "./App.css";
 
 const meny = [
@@ -75,11 +76,21 @@ const meny = [
   },
 ];
 
+
+
 const App = () => {
+  const images = [
+    "https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg",
+    "https://images.pexels.com/photos/2836945/pexels-photo-2836945.jpeg",
+    "https://images.pexels.com/photos/2530586/pexels-photo-2530586.jpeg",
+  ];
+  
   return (
     <div className="app-container">
+      <Slideshow images={images} />
       <h1 className="app-title">Restaurant Menu</h1>
       <Menu dishes={meny} />
+      <img url="./src/assets/image1.jpg"></img>
     </div>
   );
 };
